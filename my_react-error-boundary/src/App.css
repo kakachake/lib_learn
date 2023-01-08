@@ -1,0 +1,71 @@
+#root {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  margin: 1rem;
+}
+
+.card {
+  width: 100%;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 1em #00000022;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.headerBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 1em #00000022;
+  gap: 1em;
+  overflow-x: scroll;
+}
+
+/* 滚动条样式 */
+.headerBar::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.headerBar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.headerBar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.5em;
+}
+
+.headerBar > button {
+  border: none;
+  background: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.headerBar .active > button {
+  color: #646cff;
+}
